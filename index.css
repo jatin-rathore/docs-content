@@ -1,0 +1,252 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    color: #0056b3;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.detail-section {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+/* Gaming section decoration */
+.gaming-section {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.gaming-section h2 {
+    color: #00ffff;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #00ffff;
+    padding-bottom: 5px;
+}
+
+.gaming-section ul li a {
+    color: #00ffcc;
+}
+
+.gaming-section ul li a:hover {
+    color: #ffffff;
+}
+
+/* Gaming detail section styling */
+.gaming-detail {
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+    border-left: 5px solid #00ffff;
+}
+
+.gaming-detail h3, .gaming-detail h4 {
+    color: #00ffff;
+}
+
+.gaming-detail a {
+    color: #00ffcc;
+}
+
+.gaming-detail a:hover {
+    color: #ffffff;
+}
+
+.detail-section h3 {
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.detail-section h4 {
+    margin-top: 20px;
+    color: #495057;
+}
+
+.detail-section ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .detail-section {
+        padding: 15px;
+    }
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Optional: make text background more readable */
+.detail-section, .section {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+.animated-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.animated-background span {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    animation: float 20s linear infinite;
+    border-radius: 50%;
+}
+
+/* Create several floating shapes with different positions and delays */
+.animated-background span:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+    width: 30px;
+    height: 30px;
+}
+
+.animated-background span:nth-child(2) {
+    left: 30%;
+    animation-delay: 5s;
+    width: 40px;
+    height: 40px;
+}
+
+.animated-background span:nth-child(3) {
+    left: 50%;
+    animation-delay: 2s;
+    width: 25px;
+    height: 25px;
+}
+
+.animated-background span:nth-child(4) {
+    left: 70%;
+    animation-delay: 4s;
+    width: 35px;
+    height: 35px;
+}
+
+.animated-background span:nth-child(5) {
+    left: 90%;
+    animation-delay: 3s;
+    width: 20px;
+    height: 20px;
+}
+
+@keyframes float {
+    0% {
+        top: 100%;
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        top: -10%;
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
